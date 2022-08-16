@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function myfun0()
+        {
+            var a=parseInt(document.getElementById("num").value);
+            var b=parseInt(document.getElementById("nums").value);
+            document.getElementById("result").innerHTML=a+b;
+        }
+        function myfun1()
+        {
+            var a=parseInt(document.getElementById("num").value);
+            var b=parseInt(document.getElementById("nums").value);
+            document.getElementById("result").innerHTML=a-b;
+        }
+        function myfun2()
+        {
+            var a=parseInt(document.getElementById("num").value);
+            var b=parseInt(document.getElementById("nums").value);
+            document.getElementById("result").innerHTML=a*b;
+        }       
+        function myfun3()
+        {
+            var a=parseInt(document.getElementById("num").value);
+            var b=parseInt(document.getElementById("nums").value);
+            document.getElementById("result").innerHTML=a/b;
+        }
+        function clear()
+    {   
+        document.getElementById("reset").reset();
+    }
+
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+    <b>1st number:</b>
+    <input type="number" style="background-color: rgb(79, 85, 27);"  value="" id="num"><br><br>
+    <b>2nd number:</b>
+    <input type="number" style="background-color: rgb(63, 134, 22);"  value="" id="nums"><br><br>
+    <input type="button" style="background-color: rgb(71, 100, 138);"   value="+" onclick="return myfun0()"><hr>
+
+    <input type="button" style="background-color: rgb(136, 15, 32);"  value="-" onclick="return myfun1()"><br>
+    <hr>
+    <input type="button" style="background-color: rgb(110, 65, 29);"  value="*" onclick="return myfun2()"><hr>
+
+    <input type="button" style="background-color: rgb(30, 19, 82);"  value="/" onclick="return myfun3()"><br><hr>
+    <b>The Result Is:</b> <br>
+    <hr>
+    
+    <span id="result"></span>
+    
+</html>

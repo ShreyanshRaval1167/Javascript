@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+    <h1>Element object</h1>
+    <h7>Use of a focus () and blur () method</h7>
+    
+    <input type="text" id="mytext" value="A text field">
+    <p>Remove the focus click on a lose focus button</p>
+
+    <button type ="button" onclick ="getfocus ()">Get focus</button>
+    <button type ="button" onclick ="losefocus ()">lose focus</button>
+
+    <script>
+        function getfocus () {
+            document.getElementById("mytext").focus ();
+
+        }
+        function losefocus(){
+            document.getElementById("mytext").blur ();
+        
+        }
+
+    </script>
+    </body>
+    </html>

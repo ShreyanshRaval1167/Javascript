@@ -1,0 +1,60 @@
+<html>
+	<head>
+		
+		<title>Javascript</title>
+		
+		<script type="text/javascript">
+			function demoInternalAlert(){
+				alert("Internal Alert.");
+			}
+			
+			function demoInternalConfirm(){
+				if(confirm("Are you sure..??")){
+					alert("YES");
+				}
+				else{
+					alert("NO");
+				}
+			}
+			function demoInternalPrompt(){
+				var fName=prompt("Enter Firstname Here..");
+				var lName=prompt("Enter Lastname Here..");
+				alert(fName+"  "+lName);
+			}
+
+			function bodyBGGreen(){
+				document.body.style.backgroundColor="Green";
+			}
+			function divBGGray(){
+				document.getElementById("N1").style.backgroundColor="red";
+			}
+
+
+		</script>
+		<script src="scripts/demo.js" type="text/javascript"></script>
+		<style type="text/css">
+			body{background-color: rgb(3, 43, 175);}
+			div{background-color: rgb(255, 255, 255);height: 300px;width: 300px;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="N1">
+			Hello Students
+		</div>
+		<hr/>
+		<input type="button" style="background-color: rgb(194, 241, 22);" value="Alert Inline" onclick="alert('Hello Guys')"></button>&nbsp;&nbsp;
+        <br><hr>
+		<input type="button" style="background-color: rgb(194, 241, 22);" value="Confirm Inline" onclick="confirm('Are You Sure..??')" />&nbsp;&nbsp;
+        <br><hr>
+		<input type="button" style="background-color: rgb(194, 241, 22);" value="Prompt Inline" onclick="prompt('Enter Firstname Here..')" />&nbsp;&nbsp;
+        <br>
+        <hr>
+		
+		<input type="button" style="background-color: rgb(194, 241, 22);" value="Body Bg Green" onclick="bodyBGGreen()" />&nbsp;&nbsp;
+        <br>
+        <hr>
+		<input type="button" style="background-color: rgb(194, 241, 22);" value="Div Bg red" onclick="divBGGray()" />&nbsp;&nbsp;
+		
+	</body>
+</html>
